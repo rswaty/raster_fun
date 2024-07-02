@@ -1,9 +1,11 @@
 
 
-aoi <- vect("data/allegheny_nf.shp")
+library(terra)
+
+aoi <- vect("multiple_single_maps/data/allegheny_nf.shp")
 
 
-output_rasters_dir <- "output_rasters/"
+output_rasters_dir <- "multiple_single_maps/output_rasters/"
 raster_files <- list.files(output_rasters_dir, pattern = "\\.tif$", full.names = TRUE)
 
 
